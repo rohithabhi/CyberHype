@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubePulse - Ethical Hacking Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TubePulse</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                    <li><a href="#quiz-section">Exam</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="google_translate_element"></div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Master Ethical Hacking with TubePulse</h2>
+            <p>Welcome! I am Rohit Abi. As a cybersecurity student, my goal is to share this knowledge with everyone. Join me on a journey into the world of ethical hacking!</p>
+        </div>
+    </section>
+
+    <section id="tasks">
+        <div class="container">
+            <h2>Hands-on Tasks</h2>
+            
+            <div class="task-item">
+                <h3>Advanced Buffer Overflow Exploitation</h3>
+                <p>Develop a custom exploit for a vulnerable application to bypass memory protections.</p>
+                <button onclick="submitTask('Buffer Overflow')">Submit Task</button>
+            </div>
+            <div class="task-item">
+                <h3>Reverse Engineering Custom Binaries</h3>
+                <p>Analyze obfuscated machine code to understand the underlying logic and find hidden keys.</p>
+                <button onclick="submitTask('Reverse Engineering')">Submit Task</button>
+            </div>
+            <div class="task-item">
+                <h3>Building Custom Malware Payloads</h3>
+                <p>Create undetectable payloads to understand the techniques used by advanced persistent threats.</p>
+                <button onclick="submitTask('Custom Payloads')">Submit Task</button>
+            </div>
+            <div class="task-item">
+                <h3>Exploiting Advanced Web Vulnerabilities</h3>
+                <p>Find and exploit severe security flaws like Server-Side Request Forgery and XML External Entity injection.</p>
+                <button onclick="submitTask('Advanced Web Exploits')">Submit Task</button>
+            </div>
+            <div class="task-item">
+                <h3>Network Traffic Analysis and Forensics</h3>
+                <p>Investigate a compromised network capture to trace the attacker's footprint and exfiltrated data.</p>
+                <button onclick="submitTask('Network Forensics')">Submit Task</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz-section" style="display:none;">
+        <div class="container">
+            <h2>Exam / Quiz</h2>
+            <div class="quiz-item">
+                <h3>Module 1 Quiz: Network Security Basics</h3>
+                <p>Answer the following questions to test your knowledge.</p>
+                <form id="quiz-form">
+                    <p>1. Nmap is primarily used for:</p>
+                    <label>
+                        <input type="radio" name="q1" value="a"> A) Password Cracking
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="b"> B) Network Scanning and Enumeration
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="c"> C) Malware Analysis
+                    </label><br>
+                    <button type="button" onclick="checkQuiz()">Submit Answers</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="certification-section" style="display:none;">
+        <div class="container">
+            <h2>Congratulations!</h2>
+            <p>You have completed the courses and passed the exam. Claim your free certificate below.</p>
+            <a id="certificate-link" href="#" target="_blank">Download Certificate</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can use the following details to contact me:</p>
+            <p><strong>Name:</strong> Rohit Abi</p>
+            <p><strong>Email:</strong> your_email@example.com</p>
+            <p><strong>WhatsApp:</strong> your_whatsapp_number</p>
+            <div class="social-links">
+                <a href="https://instagram.com/your_username" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2026 Rohit Abi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
